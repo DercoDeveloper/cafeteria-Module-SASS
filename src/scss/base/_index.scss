@@ -1,7 +1,9 @@
 @forward 'normalize';  //solo es para llamar
 @forward 'variables';  
 @forward 'globales';  
+@forward 'mixins';
 @forward 'utilidades';  
+@forward 'tipografia';  
 
 // @use - nueva forma para llamar y utilizar el codigo
 // @import - antigua forma para llamar y utilizar el codigo

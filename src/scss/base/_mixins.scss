@@ -1,0 +1,37 @@
+/* @mixin color {
+  color: black;
+  font-size: 2rem;
+  text-rendering: none;
+}
+
+@mixin bgColor( $color ) {
+  background-color: $color;
+}
+
+*/
+
+@use 'variables' as v;
+
+@mixin telefono {
+  @media(min-width:v.$telefono) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media(min-width:v.$tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media(min-width:v.$desktop) {
+    @content;
+  }
+}
+
+@mixin grid( $columnas, $espaciado ) {
+  display: grid;
+  grid-template-columns: repeat($columnas, 1fr);
+  gap: $espaciado;
+}
